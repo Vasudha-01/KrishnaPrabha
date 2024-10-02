@@ -76,18 +76,19 @@ body {
 header h1 {
     font-size: 2.5em;
     margin: 20px;
-    color:green;
+    color: green;
 }
 
 /* Flower cards grid layout */
 .seed-grid {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
     gap: 20px; /* Adjust the spacing between the cards */
     padding: 20px;
     justify-items: center; /* Centers the items horizontally */
 }
 
+/* Seed card styling */
 .seed-card {
     border: 1px solid #ddd;
     padding: 20px;
@@ -98,21 +99,46 @@ header h1 {
     width: 200px; /* Set a fixed width for the cards */
 }
 
+/* Fixed image size */
 .seed-card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    width: 150px; /* Fixed width for images */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio and cover the space */
+    margin-bottom: 10px; /* Spacing below the image */
 }
 
+/* Seed card heading styling */
 .seed-card h3 {
-    color: #4CAF50;
-    margin-bottom: 10px;
+    color: #4CAF50; /* Heading color */
+    margin-bottom: 10px; /* Spacing below the heading */
 }
 
+/* Hover effect for seed cards */
 .seed-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slightly enlarge card on hover */
 }
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em; /* Smaller font size for mobile */
+    }
+
+    .seed-card {
+        width: 90%; /* Wider cards for mobile */
+        margin: 10px auto; /* Center and space cards */
+    }
+
+    .seed-card img {
+        width: 120px; /* Smaller image size for mobile */
+        height: 120px; /* Smaller height for mobile */
+    }
+
+    .seed-card h3 {
+        font-size: 1.2em; /* Smaller heading size for mobile */
+    }
+}
+
 
 /* General styling for the homepage */
 body {
@@ -185,44 +211,80 @@ footer {
     color: white;
     padding: 10px 0;
 }
-/* Vegetable seeds section styling */
-#vegetables {
-    margin: 50px auto;
-    padding: 20px;
-    max-width: 1600px;
-}
-
-/* Seed grid for Vegetable Seeds */
-#vegetables .seed-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    gap: 20px; /* Adjust the spacing between the cards */
-    padding: 20px;
-    justify-items: center; /* Centers the items horizontally */
-
-/* Seed card styling for Vegetable Seeds */
-#vegetables .seed-card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
+/* General styles for the vegetable seeds page */
+body {
+    background-color: #f4f4f4; /* Optional background color */
     text-align: center;
-    transition: transform 0.2s ease-in-out;
-    width: 500px; /* Set a fixed width for the cards */
 }
 
-#vegetables .seed-card img {
-    width: 350px;
-    height: 150px;
-    object-fit: cover;
-    margin-bottom: 10px;
+/* Header styling */
+header h1 {
+    font-size: 2.5em; /* Responsive font size for the header */
+    margin: 20px 0; /* Add margin for spacing */
+    color: green;
 }
 
-#vegetables .seed-card h3 {
-    color: #4CAF50;
-    margin-bottom: 10px;
+/* Seed grid styling */
+.seed-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center the cards */
+    margin: 20px 0; /* Add margin for spacing */
 }
 
-#vegetables .seed-card:hover {
-    transform: scale(1.05);
+/* Seed card styling */
+.seed-card {
+    width: 30%; /* Default width for desktop view */
+    margin: 10px; /* Space between cards */
+    padding: 10px; /* Inner padding */
+    background-color: white; /* Background for each card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+/* Fixed image size */
+.seed-card img {
+    width: 150px; /* Fixed width for images */
+    height: 150px; /* Fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio and cover the space */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+/* Seed card text styling */
+.seed-card h3 {
+    font-size: 1.5em; /* Responsive font size for seed names */
+    margin: 10px 0; /* Spacing for heading */
+}
+
+.seed-card p {
+    font-size: 1em; /* Standard font size for descriptions */
+    color: #333; /* Text color */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em; /* Smaller font size for mobile */
+    }
+
+    .seed-card {
+        width: 90%; /* Wider cards for mobile */
+        margin: 10px auto; /* Center and space cards */
+    }
+
+    .seed-card h3 {
+        font-size: 1.2em; /* Smaller heading size for mobile */
+    }
+
+    .seed-card p {
+        font-size: 0.9em; /* Smaller text for descriptions */
+    }
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Footer background color */
+    color: white; /* Footer text color */
+    padding: 10px 0; /* Footer padding */
 }
