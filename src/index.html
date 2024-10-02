@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
         /* General styles for the body and main content */
         html, body {
@@ -12,94 +11,92 @@
             margin: 0;
             display: flex;
             flex-direction: column;
+            align-items: center; /* Center elements horizontally */
+        }
+
+        /* Background styling for body */
+        body {
+            background-image: url('bg.jpg');
+            background-size: cover; /* Ensure the background image covers the entire viewport */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+            text-align: center; /* Center align all text */
+            color: white; /* Set text color to white for better contrast */
         }
 
         /* Main content styling */
         #welcome, .button-group {
             flex: 1; /* Allow this section to grow and fill the space */
+            display: flex;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center align elements */
+            justify-content: center; /* Center elements vertically */
+            padding: 20px; /* Add padding for better spacing */
         }
 
-        /* Footer styling */
-        footer {
-            background-color: #888e88; /* Same as your header */
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: relative; /* Optional, allows footer to adjust with content */
-        }
-
-        /* Ensure inline display of footer text */
-        footer p {
+        /* General styling for the homepage */
+        h1 {
+            font-size: 4.5em; /* Heading size */
             margin: 0;
-            display: inline; /* Makes the text inline */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
         }
-        /* General page styling */
-body {
-    text-align: center;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-/* Header styling */
-header h1 {
-    font-size: 2.5em;
-    margin: 20px;
-    color: green; /* This might be overridden by inline styles in home.html */
-}
+        h2 {
+            font-size: 2em;
+            margin-top: 20px; /* Reduced margin to fit better on mobile */
+        }
 
-/* General styling for the homepage */
-h1 {
-    font-size: 4.5em; /* This overrides header h1 styling */
-    margin: 0;
-}
+        .button-group {
+            margin: 20px 0; /* Spacing for buttons */
+        }
 
-h2 {
-    font-size: 2em;
-    color: #333;
-    margin-top: 30px;
-}
+        .btn {
+            display: inline-block;
+            margin: 10px; /* Reduce margin for better fit */
+            padding: 10px 20px; /* Adjust padding for smaller buttons */
+            font-size: 1.2em; /* Font size inside the buttons */
+            background-color: rgba(163,230,12,0.6);
+            color: white;
+            text-decoration: none;
+            border-radius: 10px; /* Roundness of the buttons */
+            transition: background-color 0.3s, transform 0.2s;
+            font-weight: bold; /* Make the text inside the button bolder */
+        }
 
-#welcome {
-    padding: 20px;
-}
+        .btn:hover {
+            background-color: rgb(98, 200, 15);
+            transform: scale(1.05); /* Slightly enlarges the button on hover */
+        }
 
-.button-group {
-    margin: 20px 0;
-}
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 4.5em; /* Reduce heading size for smaller screens */
+                margin: 5px; /* Adjust margin for better fit */
+            }
 
-.btn {
-    display: inline-block;
-    margin: 15px; /* Increase margin for spacing between buttons */
-    padding: 20px 40px; /* Increase padding for larger button size */
-    font-size: 1.6em; /* Increase the font size inside the buttons */
-    background-color: rgba(163,230,12,0.6);
-    color: white;
-    text-decoration: none;
-    border-radius: 10px; /* Increase the roundness of the buttons */
-    transition: background-color 0.3s, transform 0.2s;
-    font-weight: bold; /* Make the text inside the button bolder */
-}
+            h2 {
+                font-size: 1.5em; /* Reduce subtitle size */
+            }
 
-.btn:hover {
-    background-color: rgb(98, 200, 15);
-    transform: scale(1.1); /* Slightly enlarges the button on hover */
-}
+            .btn {
+                padding: 10px; /* Further reduce button padding */
+                font-size: 1em; /* Reduce button font size for mobile */
+            }
 
-/* Footer styling */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
+            #welcome {
+                padding: 10px; /* Reduce padding */
+            }
 
+            .button-group {
+                margin: 10px 0; /* Reduce margin */
+            }
+        }
     </style>
 </head>
-<body style="background-image: url('bg.jpg'); background-size:cover  ; background-position: center; background-repeat: no-repeat;">
+<body>
     <header>
-
-        <h1 style="color: white;  background-color: transparent; font-size: 150px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-shadow: #000;">ಕೃಷ್ಣಪ್ರಭಾ</h1>
+        <h1 style="color: white; background-color: transparent; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; text-shadow: #000;">ಕೃಷ್ಣಪ್ರಭಾ</h1>
     </header>
 
     <section id="welcome">
@@ -108,11 +105,9 @@ footer {
             <a href="products.html" class="btn">Our Products</a>
             <a href="contact.html" class="btn">Contact Us</a>
         </div>
-        <h2 style="color: white">Welcome to KrishnaPrabha!</h2>
-        <p style="color: white">Your go-to platform for exploring a variety of seeds and plants.</p>
+        <h2>Welcome to KrishnaPrabha!</h2>
+        <p>Your go-to platform for exploring a variety of seeds and plants.</p>
     </section>
-
-   
 
     <!-- <footer>
         <p>© 2024 KrishnaPrabha</p>

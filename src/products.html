@@ -29,11 +29,15 @@
                 margin: 10px auto; /* Adjust margin for smaller screens */
                 padding: 10px; /* Reduce padding for smaller screens */
                 text-align: center; /* Center text within the card */
+                min-height: 200px; /* Set a minimum height */
+                box-sizing: border-box;
             }
 
             .category-card img {
                 width: 100%; /* Make images responsive */
                 height: auto; /* Maintain aspect ratio */
+                max-height: 299px; /* Set a maximum height for images */
+                object-fit: cover; 
             }
 
             .btn {
