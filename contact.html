@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General styles for the body and main content */
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header styling */
+        header {
+            background-color: rgb(226, 136, 41);
+            color: white;
+            padding: 20px;
+        }
+
+        header h1 {
+            font-size: 4.5em;
+            margin: 0;
+        }
+
+        /* Main content styling */
+        #contact {
+            flex: 1;
+            padding: 8px;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #333;
+            margin-top: 8px;
+        }
+
+        /* Contact details styling */
+        .contact-details {
+            text-align: center;
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 10px;
+        }
+
+        .contact-details p {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .contact-details b {
+            font-weight: bold;
+        }
+
+        .contact-details .number {
+            color: blue;
+        }
+
+        /* Email styling */
+        .email {
+            font-size: 1.2em;
+            color: #333;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #888e88;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+        }
+        
+        footer p {
+            margin: 0;
+            display: inline;
+        }
+        .contact-details {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 10px;
+    font-size: larger; /* Optional: adds space between columns */
+}
+
+.column {
+    flex: 1; /* Each column will take up equal space */
+}
+
+.number {
+    color: blue; /* Makes the phone numbers blue */
+}
+
+@media (max-width: 468px) {
+    .contact-details {
+        flex-direction: column; /* Stacks the columns on smaller screens */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: white; background-color: transparent; font-size: 50px; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Contact Us</h1>
+    </header>
+
+    <section id="contact">
+        <!-- <h2>Contact Details</h2> -->
+        <div class="contact-details">
+            <div class="column">
+                <p><b>Preetam Naik</b>: <span class="number">7760626577</span></p>
+                <p><b>Sagar Naik</b>: <span class="number">6363431886</span></p>
+                <p><b>Lakshmi B Y</b>: <span class="number">7975746884</span></p>
+                <p><b>Aishwarya</b>: <span class="number">8792418331</span></p>
+                <p><b>L N Abhishek</b>: <span class="number">8861844741</span></p>
+            </div>
+            <div class="column">
+                <p><b>Prerana</b>: <span class="number">9743226416</span></p>
+                <p><b>Shrilaxmi</b>: <span class="number">8105434277</span></p>
+                <p><b>Chaitra</b>: <span class="number">7411253039</span></p>
+                <p><b>Tanuja</b>: <span class="number">9036379942</span></p>
+                <p><b>Lekhana</b>: <span class="number">8073226221</span></p>
+            </div>
+        </div>
+    </section>
+    
+        <div class="email" style="margin-bottom: 100px;">
+            <p>Email: <a href="mailto:preetam15naik@gmail.com" style="color: blue; font-size: larger;">preetam15naik@gmail.com</a></p>
+        </div>
+
+    <footer>
+        <p>© 2024 KrishnaPrabha</p>
+    </footer>
+</body>
+</html>

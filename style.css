@@ -1,0 +1,227 @@
+/* General page styling */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Category section styling */
+#categories {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Category grid styling */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+
+/* Category card styling */
+.category-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 500px; /* Fixed width for cards */
+    height: 480px; /* Fixed height for cards */
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.category-card img {
+    width: 100%; /* Make image full width of the card */
+    height: 300px; /* Fixed height for images */
+    object-fit:contain; /* Crop the image to fit, keeping aspect ratio */
+    border-radius: 8px 8px 0 0; /* Rounded corners on top */
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: rgba(107, 143, 45, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #52ac56;
+}
+/* General page styling */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header styling */
+header h1 {
+    font-size: 2.5em;
+    margin: 20px;
+    color:green;
+}
+
+/* Flower cards grid layout */
+.seed-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px; /* Adjust the spacing between the cards */
+    padding: 20px;
+    justify-items: center; /* Centers the items horizontally */
+}
+
+.seed-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    width: 200px; /* Set a fixed width for the cards */
+}
+
+.seed-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.seed-card h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.seed-card:hover {
+    transform: scale(1.05);
+}
+
+/* General styling for the homepage */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    /* background-color:rgba(107, 143, 45, 0.5); */
+    background-color: green;
+    color: white;
+    padding: 50px;
+    border-top: 100px;
+}
+
+h1 {
+    font-size: 4.5em;
+    margin: 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 30px;
+}
+
+#about, #welcome {
+    padding: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.button-group {
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin: 5px; /* Increase margin for spacing between buttons */
+    padding: 20px 40px; /* Increase padding for larger button size */
+    font-size: 1.3em; /* Increase the font size inside the buttons */
+    background-color:green;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px; /* Increase the roundness of the buttons */
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold; /* Make the text inside the button bolder */
+}
+
+.btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+
+/* Contact Section */
+#contact {
+    background-color: #e0f7fa;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+/* Vegetable seeds section styling */
+#vegetables {
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1600px;
+}
+
+/* Seed grid for Vegetable Seeds */
+#vegetables .seed-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    gap: 20px; /* Adjust the spacing between the cards */
+    padding: 20px;
+    justify-items: center; /* Centers the items horizontally */
+
+/* Seed card styling for Vegetable Seeds */
+#vegetables .seed-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    width: 500px; /* Set a fixed width for the cards */
+}
+
+#vegetables .seed-card img {
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#vegetables .seed-card h3 {
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+#vegetables .seed-card:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Flexbox styling for header */
+        header {
+            display: flex;
+            align-items: center; /* Vertically center-align the logo and text */
+            justify-content: space-between; /* Space between logo and text */
+            padding: 20px;
+            background-color: chocolate;
+            color: white;
+        }
+
+        /* Logo styling */
+        header img {
+            width: 100px; /* Adjust the size of the logo */
+            margin-right: 20px; /* Space between logo and text */
+        }
+
+        /* Container for text */
+        .header-text {
+            flex-grow: 1; /* Allows text container to grow and take up space */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Center text inside the container */
+            justify-content: center; /* Center vertically */
+        }
+
+        /* College name styling */
+        header h3, header h2, header h1 {
+            margin: 5px 0;
+        }
+
+        /* Card styling for the About Us section */
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: center;
+            opacity: 0; /* Initially hidden */
+            transform: translateY(100px); /* Positioned off-screen */
+            animation: slideUp 1.5s ease-out forwards; /* Animation */
+        }
+
+        /* Slide-up animation */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(200px); /* Start from 100px below */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0); /* End at normal position */
+            }
+        }
+
+        .card h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .card p {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <img src="logo.jpg" alt="College Logo" style="width: 150px; height: auto;"> <!-- Placeholder for logo -->
+        <div class="header-text">
+            <h2 style="color: white;">University of Horticultural Sciences, Bagalkot</h2>
+            <h1 style="color: white;">College of Horticulture, Sirsi</h1>
+            <h1 style="color: white;">KrishnaPrabha</h1>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about-us">
+        <div class="card" style="text-align: justify;">
+            <h1 style="text-align: center;">About Us</h1>
+            <p style="text-align: justify;">
+                We the final year students of College of Horticulture Sirsi, undergoing the Experiential learning of horticulture (ELH) course. 
+Krishnaprabha is our brand name, which includes vegetable seed kit, flower seed kit, terrariums, lucky bamboo, and other products. 
+            </p>
+
+            <p style="font-weight: bold;">We Offer:</p> 
+            <p style="font-weight: bold;">Vegetable seed kit:</p> 
+            <p>It includes 10 types of different vegetable seeds namely Tomato, Brinjal, Chilli, Beans, Cucumber, Coriander, Palak, Methi, Radish, and Ridge gourd.
+            All seeds are tested for purity and germination and are of good quality. 
+            Sprout a greener lifestyle with our easy-to-use Vegetable Seed Kit! Cultivate a thriving kitchen garden, enjoy chemical-free produce, and taste the difference freshness makes.</p>
+
+            <p style="font-weight: bold;">Flower seed kit:</p> 
+            <p>It includes 10 types of different annual flowers namely Pansy, Cosmos, Daisy, Gypsophila, Anthirrinum, Candytuft, Cornflower, Verbena, California poppy, and Phlox.
+            All seeds are tested for purity and germination and are of good quality. 
+            Sow seeds of elegance with our easy-to-grow Flower Seed Kit! Create stunning floral arrangements, attract pollinators, and make your space a haven of natural beauty.</p>
+
+            <p style="font-weight: bold;">Others:</p> 
+            <p>Terrarium, lucky Bamboo, bouquet, and other products are also available under KrishnaPrabha. Do contact us for more information.</p>
+        </div>
+    </section>
+
+</body>
+</html>
