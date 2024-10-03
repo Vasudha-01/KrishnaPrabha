@@ -130,8 +130,8 @@ header h1 {
     }
 
     .seed-card img {
-        width: 120px; /* Smaller image size for mobile */
-        height: 120px; /* Smaller height for mobile */
+        width: 150px; /* Smaller image size for mobile */
+        height: 150px; /* Smaller height for mobile */
     }
 
     .seed-card h3 {
